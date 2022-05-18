@@ -13,9 +13,20 @@ const Books = (props) => {
     <h1 className='title'>{book.title}</h1>
     <h5 class="card-body">{book.author}</h5>
     <p class="card-text">{book.price / 1000000000000000000}cUSD</p>
-   <a href="/#" class="btn btn-success"  onClick={() => props.buyBook(book.index)}>Buy Book</a>
+    {/* other users can buy book except the owner */}
+    {props.userWa !== book.owner && (
+      <a href="/#" class="btn btn-success"  onClick={() => props.buyBook(book.index)}>Buy Book</a>
+    ) }
+
     <a href='/#' class="btn btn-success"   onClick={ ()=> props.Like(book.index)}>Like book</a>
-    <a href='/#' class="btn btn-success"   onClick={ ()=> props.DeleteBook(book.index)}>Delete Book</a>
+
+    {/* only owner can delete book */}
+    {props.userWa === book.owner && (
+      <a href='/#' class="btn btn-success"   onClick={ ()=> props.DeleteBook(book.index)}>Delete Book</a>
+    ) }
+   
+    
+    
   </div>
 </div>
 

@@ -94,12 +94,13 @@ function App() {
 
       resolve({
         index: index,
-        owner: [0],
-        url: book[1],
-        title: book[2],
-        author: book[3],
-        price: book[4],
-        like: book[5]
+        owner: book[0],
+        bookId: book[1],
+        url: book[2],
+        title: book[3],
+        author: book[4],
+        price: book[5],
+        like: book[6]
 
                 
       });
@@ -167,6 +168,7 @@ const DeleteBook = async (_index) => {
       buyBook = {buyBook}
       DeleteBook = {DeleteBook}
       Like= {Like}
+      userWa={address}
       
        
       />
