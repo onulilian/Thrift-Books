@@ -18,7 +18,7 @@ import Forms from './components/Forms';
 const ERC20_DECIMALS = 18;
 
 
-const contractAddress = "0xDc26987B1E905ee42e4fe4a8869e13DFAF6156E8";
+const contractAddress = "0x9c2D6C44A7Dbf43D4d365015ac870618fdd50B01";
 const cUSDContractAddress = "0x874069Fa1Eb16D44d622F2e0Ca25eeA172369bC1";
 
 

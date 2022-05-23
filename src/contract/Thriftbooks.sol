@@ -33,7 +33,7 @@ interface IERC20Token {
     
     
     uint internal booksLength = 0;
-    address internal cUsdTokenAddress =  0x874069Fa1Eb16D44d622F2e0Ca25eeA172369bC11;
+    address internal cUsdTokenAddress =  0x874069Fa1Eb16D44d622F2e0Ca25eeA172369bC1;
 
     struct  Book {
         address payable owner;
