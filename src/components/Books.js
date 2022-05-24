@@ -14,7 +14,11 @@ const Books = (props) => {
     <h5 class="card-body">{book.author}</h5>
     <p class="card-text">{book.price / 1000000000000000000}cUSD</p>
    <a href="/#" class="btn btn-success"  onClick={() => props.buyBook(book.index)}>Buy Book</a>
+   <div>
     <a href='/#' class="btn btn-success"   onClick={ ()=> props.Like(book.index)}>Like book</a>
+    <a href='/#' class="btn btn-success"   onClick={ ()=> props.Like(book.index)}><small class="jt">{book.like} Likes</small></a>
+     
+    </div>
     <a href='/#' class="btn btn-success"   onClick={ ()=> props.DeleteBook(book.index)}>Delete Book</a>
   </div>
 </div>
